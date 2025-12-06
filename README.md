@@ -7,7 +7,7 @@
   * Dr. Alexander Lozinski
   * December 5th, 2025
 
-* Your report should be written using a scientific structure. [This template page](/project.md) gives an example structure that you could use, but feel free to make it your own. See Bruinlearn for some examples from previous students.
+* This project predits whether a skincar eproduct is suited for sensitive skin using ingredient lists and product reviews from the Sephora website. Data from the five most purchased brands at Sephora (Summer Frdiays, Glow Recipe, The Ordinary, Laneige, and Tatcha) were collected, cleaned, and trasnformed into the TF-IDF features. Logistic regression and random forest models were trained to classify the products. Results show that the models achieved strong accuracy and ingredient importance analysis highlights the common irritants present. The goal of this project is to show how natural processing of prodcut ingredients can provide meaningful insight for customer who experience skin sensitivity. 
 * To get high marks: **apply things that you learnt about in class**, and **explain your process in the report**, i.e. why you thought this would be interesting, why you decided to use a particular model, the challenges that you faced processing your data, etc.
 
 Your website will be a great addition to your CV, and a place to host future projects too since it doubles as a GitHub repository. The first step is to set up a project website like this one by following the instructions below. 
