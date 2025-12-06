@@ -1,8 +1,7 @@
 **Hi, welcome to my AOS C111/204 final project!** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
 
-For this project, you will be applying your skills to train a machine learning model using real-world data, then publishing a report on your own website.
 
-* To get data for your project, you could:
+* Predicting skincare toxicity from the five
   * use **your own data** from a separate research activity
   * **scour the internet** to find something original, then preprocess it yourself - see the Module Overview on BruinLearn for some resources
   * browse an archive of data designed for machine learning problems, such as the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/datasets)
