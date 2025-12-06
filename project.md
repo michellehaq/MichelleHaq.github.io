@@ -43,6 +43,7 @@ I also visualized ingredient frequency and distribution of sensitive-friendly pr
 
 
 Figure 2 shows the top 15 ingredients that most strongly influence whether a product is predicted to be sensitive-skin friendly, according to the Random Forest model. Ingredients like “fragrance” and “alcohol denat” have high importance because their presence strongly predicts that a product may irritate sensitive skin, while soothing ingredients like “aloe vera” and “glycerin” contribute positively to friendly classifications. This figure helps explain the model’s predictions and supports the conclusion that certain ingredients are key determinants of skin sensitivity in skincare products.
+
 <img width="340" height="210" alt="image" src="https://github.com/user-attachments/assets/537c9d86-274a-4839-b9ca-d889f1345df4" />
 
 
