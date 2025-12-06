@@ -39,8 +39,57 @@ Splitting the data into 80% training and 20% testing
 
 We also visualized ingredient frequency and distribution of sensitive-friendly products.
 
-{: width="500" }
+**{: width="500" }
 
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from collections import Counter
+
+# Load dataset
+df = pd.read_csv("assets/skincare_data.csv")
+
+# Split ingredients and flatten list
+all_ingredients = []
+for ingredients in df['ingredients']:
+    # split by comma, remove spaces, lowercase
+    all_ingredients.extend([i.strip().lower() for i in ingredients.split(',')])
+
+# Count top 15 most common ingredients
+ingredient_counts = Counter(all_ingredients)
+top_ingredients = dict(ingredient_counts.most_common(15))
+
+# Create a dataframe for plotting
+plot_df = pd.DataFrame({
+    'ingredient': list(top_ingredients.keys()),
+    'count': list(top_ingredients.values())
+})
+
+# Merge with sensitive label info to compute proportion in friendly products
+proportions = []
+for ing in plot_df['ingredient']:
+    mask = df['ingredients'].str.lower().str.contains(ing)
+    prop_friendly = df[mask]['sensitive_label'].mean()
+    proportions.append(prop_friendly)
+
+plot_df['prop_friendly'] = proportions
+
+# Plot: bar chart with proportion overlay
+fig, ax1 = plt.subplots(figsize=(12,6))
+
+sns.barplot(x='ingredient', y='count', data=plot_df, color='skyblue', ax=ax1)
+ax1.set_ylabel("Frequency in Dataset", color='blue')
+ax1.set_xticklabels(ax1.get_xticklabels(), rotation=45, ha='right')
+
+# Overlay line plot of proportion friendly
+ax2 = ax1.twinx()
+sns.lineplot(x='ingredient', y='prop_friendly', data=plot_df, color='red', marker="o", ax=ax2)
+ax2.set_ylabel("Proportion Sensitive-Skin Friendly", color='red')
+
+plt.title("Top 15 Ingredients Frequency and Proportion of Sensitive-Skin Friendly Products")
+plt.tight_layout()
+plt.savefig("assets/IMG/datapenguin.png")  # saves figure for your website
+plt.show()
 Figure 1: Frequency distribution of common ingredients across the dataset and their correlation with sensitive-skin friendliness.
 
 ## Modelling
