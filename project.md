@@ -2,8 +2,7 @@
 
 ## My Project
 
-I applied machine learning techniques to investigate... Below is my report.
-
+I applied machine learning techniques to investigate skincare toxicity from the five most purchased skincare brands at Sephora.
 ***
 
 ## Introduction 
