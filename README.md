@@ -3,7 +3,7 @@
 
 * Predicting Skincare Toxicity in Skincare Products from the Five Most purchased Brands at Sephora
   * Michelle Haq 
-  * **scour the internet**AOS C111: Introduction to Machine Learning for the Physical Sciences
+  * AOS C111: Introduction to Machine Learning for the Physical Sciences
   * Dr. Alexander Lozinski
   * December 5th, 2025
 
