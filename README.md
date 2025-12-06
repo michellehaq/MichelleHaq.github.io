@@ -1,10 +1,11 @@
 **Hi, welcome to my AOS C111/204 final project!** <img align="right" width="220" height="220" src="/assets/IMG/template_logo.png">
 
 
-* Predicting skincare toxicity from the five
-  * use **your own data** from a separate research activity
-  * **scour the internet** to find something original, then preprocess it yourself - see the Module Overview on BruinLearn for some resources
-  * browse an archive of data designed for machine learning problems, such as the [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/datasets)
+* Predicting Skincare Toxicity in Skincare Products from the Five Most purchased Brands at Sephora
+  * Michelle Haq 
+  * **scour the internet**AOS C111: Introduction to Machine Learning for the Physical Sciences
+  * Dr. Alexander Lozinski
+  * December 5th, 2025
 
 * Your report should be written using a scientific structure. [This template page](/project.md) gives an example structure that you could use, but feel free to make it your own. See Bruinlearn for some examples from previous students.
 * To get high marks: **apply things that you learnt about in class**, and **explain your process in the report**, i.e. why you thought this would be interesting, why you decided to use a particular model, the challenges that you faced processing your data, etc.
