@@ -37,7 +37,9 @@ Labeling products as 1 for sensitive-skin friendly or 0 otherwise
 
 Splitting the data into 80% training and 20% testing
 
-We also visualized ingredient frequency and distribution of sensitive-friendly products.
+We also visualized ingredient frequency and distribution of sensitive-friendly products, shown in **Figure 1**
+<img width="341" height="165" alt="image" src="https://github.com/user-attachments/assets/3d619398-e331-4805-8e9f-9351cb6199b6" />
+
 
 **{: width="500" }
 
@@ -49,9 +51,8 @@ Machine learning can predict sensitive-skin friendliness from product ingredient
 
 Random Forest outperformed Logistic Regression and highlighted important irritant and protective ingredients.
 
-Future development could involve expanding the dataset, integrating consumer reviews more fully, and using deep learning approaches for more nuanced prediction.
+Future development could involve expanding the dataset, integrating consumer reviews more fully, and using deep learning approaches for more detailed prediction.
 
-Here is how this work could be developed further in a future project.
 
 ## References
 [1] Summer Fridays website: https://www.summerfridays.com
