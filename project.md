@@ -1,5 +1,6 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+
 ## My Project
 
 I applied machine learning techniques to investigate skincare toxicity from the five most purchased skincare brands at Sephora. The brands include Summer Fridays, The Ordinary, Glow Recipe, Laneige, and Tatcha. 
@@ -15,7 +16,7 @@ By training models such as logistic regression and random forest classifiers, I 
 
 ## Data
 
-The dataset includes about 200 skincare products from the five brands. For each product, we recorded:
+The dataset includes about 200 skincare products from the five brands. For each product,  recorded:
 
 Product name
 
@@ -27,9 +28,9 @@ Average rating
 
 Sensitive-skin label (binary)
 
-Data was scraped directly from brand websites. Preprocessing steps included:
+Data was scraped directly from brand bsites. Preprocessing steps included:
 
-Cleaning ingredient text (lowercasing, removing punctuation, standardizing names like “Aqua → Water”)
+Cleaning ingredient text (lorcasing, removing punctuation, standardizing names like “Aqua → Water”)
 
 Generating TF-IDF features from ingredient lists
 
@@ -37,11 +38,13 @@ Labeling products as 1 for sensitive-skin friendly or 0 otherwise
 
 Splitting the data into 80% training and 20% testing
 
-We also visualized ingredient frequency and distribution of sensitive-friendly products, shown in **Figure 1**
+I also visualized ingredient frequency and distribution of sensitive-friendly products, shown in **Figure 1**
 <img width="341" height="165" alt="image" src="https://github.com/user-attachments/assets/3d619398-e331-4805-8e9f-9351cb6199b6" />
 
 
-**{: width="500" }
+Figure 2 shows the top 15 ingredients that most strongly influence whether a product is predicted to be sensitive-skin friendly, according to the Random Forest model. Ingredients like “fragrance” and “alcohol denat” have high importance because their presence strongly predicts that a product may irritate sensitive skin, while soothing ingredients like “aloe vera” and “glycerin” contribute positively to friendly classifications. This figure helps explain the model’s predictions and supports the conclusion that certain ingredients are key determinants of skin sensitivity in skincare products.
+<img width="340" height="210" alt="image" src="https://github.com/user-attachments/assets/537c9d86-274a-4839-b9ca-d889f1345df4" />
+
 
 ## Conclusion
 
@@ -55,15 +58,15 @@ Future development could involve expanding the dataset, integrating consumer rev
 
 
 ## References
-[1] Summer Fridays website: https://www.summerfridays.com
+[1] Summer Fridays bsite: https://www.summerfridays.com
 
-[2] Glow Recipe website: https://www.glowrecipe.com
+[2] Glow Recipe bsite: https://www.glowrecipe.com
 
-[3] Laneige website: https://www.laneige.com
+[3] Laneige bsite: https://www.laneige.com
 
-[4] The Ordinary website: https://theordinary.com
+[4] The Ordinary bsite: https://theordinary.com
 
-[5] Tatcha website: https://www.tatcha.com
+[5] Tatcha bsite: https://www.tatcha.com
 
 [back](./)
 
